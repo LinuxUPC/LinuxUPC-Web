@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/blog', function(req, res, next){
-    res.render('blog')
-})
+    res.render('blog', { title: 'Not hardcoded title OwO' });
+});
 
 module.exports = router;
