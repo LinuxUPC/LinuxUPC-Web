@@ -1,5 +1,14 @@
 include layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+h1
+| ' '
+.container
+    .row
+        .col-10
+            h1 Welcome!
+            include home
+        .col-2
+            | Twitter y cosas
+
+
+include footer
