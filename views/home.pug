@@ -1,4 +1,4 @@
-block content
+
 doctype html
 html
     head
@@ -20,132 +20,121 @@ html
         link(rel='stylesheet', href='libs/theme/css/style.css')
         link(rel='stylesheet', href='libs/gallery/style.css')
         link(rel='stylesheet', href='libs/mobirise/css/mbr-additional.css', type='text/css')
+
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+
+        style.
+            .margin {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+                font-size: 17px;
+            }
+
+            .item {
+                position: relative;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .item img {
+                vertical-align: middle;
+            }
+
+            .item .content {
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+
     body
-        section#gallery1-d.mbr-gallery.mbr-slider-carousel.cid-qTJDkACNQS
+        // PROJECTS
+        section#gallery1-d.mbr-gallery.mbr-slider-carousel
             .container
-                div
-                    // Filter
+                div.margin
                     // Gallery
-                    h1 Projects
-                    .mbr-gallery-row
-                        .mbr-gallery-layout-default
-                            div
-                                div
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Increíble')
-                                        div(href='#lb-gallery1-d', data-slide-to='0', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Responsive')
-                                        div(href='#lb-gallery1-d', data-slide-to='1', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Creativa')
-                                        div(href='#lb-gallery1-d', data-slide-to='2', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Animada')
-                                        div(href='#lb-gallery1-d', data-slide-to='3', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Increíble')
-                                        div(href='#lb-gallery1-d', data-slide-to='4', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Increíble')
-                                        div(href='#lb-gallery1-d', data-slide-to='5', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Responsive')
-                                        div(href='#lb-gallery1-d', data-slide-to='6', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                                    .mbr-gallery-item.mbr-gallery-item--p1(data-video-url='false', data-tags='Animada')
-                                        div(href='#lb-gallery1-d', data-slide-to='7', data-toggle='modal')
-                                            img(src='images/01.jpg', alt='', title='')
-                                            span.icon-focus
-                                            span.mbr-gallery-title.mbr-fonts-style.display-7 Escribir subtítulo aquí
-                            .clearfix
-                    // Lightbox
-                    #lb-gallery1-d.mbr-slider.modal.fade.carousel.slide(data-app-prevent-settings='', tabindex='-1', data-keyboard='true', data-interval='false')
-                        .modal-dialog
-                            .modal-content
-                                .modal-body
-                                    .carousel-inner
-                                        .carousel-item.active
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                        .carousel-item
-                                            img(src='images/01.jpg', alt='', title='')
-                                    a.carousel-control.carousel-control-prev(role='button', data-slide='prev', href='#lb-gallery1-d')
-                                        span.mbri-left.mbr-iconfont(aria-hidden='true')
-                                        span.sr-only Previous
-                                    a.carousel-control.carousel-control-next(role='button', data-slide='next', href='#lb-gallery1-d')
-                                        span.mbri-right.mbr-iconfont(aria-hidden='true')
-                                        span.sr-only Next
-                                    a.close(href='#', role='button', data-dismiss='modal')
-                                        span.sr-only Close
+                    h1 Lastest Projects
+                        #myCarousel.carousel.slide.margin
+                            // Indicators
+                            ol.carousel-indicators(style="width: 100%; margin: 0 auto;")
+                                li.active(data-target='#myCarousel', data-slide-to='0')
+                                li(data-target='#myCarousel', data-slide-to='1')
+                                li(data-target='#myCarousel', data-slide-to='2')
+                            // Wrapper for slides
+                            .carousel-inner
+                                .item.active
+                                    img(src='images/01.jpg', alt='', style='width:100%;')
+                                    .content
+                                        h1 Title
+                                        p Descripcion
+                                .item
+                                    img(src='images/02.jpg', alt='', style='width:100%;')
+                                    .content
+                                        h1 Title
+                                        p Descripcion
+                                .item
+                                    img(src='images/03.jpg', alt='', style='width:100%;')
+                                    .content
+                                        h1 Title
+                                        p Descripcion
+                            // Left and right controls
+                            a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                                span.glyphicon.glyphicon-chevron-left
+                                span.sr-only Previous
+                            a.right.carousel-control(href='#myCarousel', data-slide='next')
+                                span.glyphicon.glyphicon-chevron-right
+                                span.sr-only Next
+            a(href="#")
+                h4.align-center Més Projectes...
 
         section.engine
-        section#features17-c.features17.cid-qTJCtIqlsp(style="margin-top: 10px")
-            .container-fluid
-                h1 Blogs
-                .media-container-row
-                    .card.p-3.col-3
-                        .card-wrapper
-                            .card-img
-                                img(src='images/01.jpg', alt='Mobirise')
-                            .card-box
-                                h4.card-title.pb-3.mbr-fonts-style.display-7
-                                    | No Coding
-                                p.mbr-text.mbr-fonts-style.display-7
-                                    | Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.
-                    .card.p-3.col-3
-                        .card-wrapper
-                            .card-img
-                                img(src='images/01.jpg', alt='Mobirise')
-                            .card-box
-                                h4.card-title.pb-3.mbr-fonts-style.display-7
-                                    | Mobile Friendly
-                                p.mbr-text.mbr-fonts-style.display-7
-                                    | All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site.
-                    .card.p-3.col-3
-                        .card-wrapper
-                            .card-img
-                                img(src='images/01.jpg', alt='Mobirise')
-                            .card-box
-                                h4.card-title.pb-3.mbr-fonts-style.display-7
-                                    | Unique Styles
-                                p.mbr-text.mbr-fonts-style.display-7
-                                    | Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.
-                    .card.p-3.col-3
-                        .card-wrapper
-                            .card-img
-                                img(src='images/01.jpg', alt='Mobirise')
-                            .card-box
-                                h4.card-title.pb-3.mbr-fonts-style.display-7
-                                    | Unlimited Sites
-                                p.mbr-text.mbr-fonts-style.display-7
-                                    | Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
 
-        section#accordion2-7.accordion2.cid-qTJBSFTpzN(style="margin-top: 10px")
+        // BLOGS
+        section#content6-l.mbr-section.content6.cid-qVglxaC595.margin
+            .container
+                h1.margin Lastest Blogs
+                .media-container-row.margin
+                    .col-4.mbr-figure(style='width: 50%;')
+                        img(src='images/01.jpg', alt='')
+                    .col-8.media-content
+                        .mbr-section-text
+                            p.mbr-text.mb-0.mbr-fonts-style.display-7
+                                strong Make your own website in a few clicks!
+                                |  Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and
+                                em mobile friendly websites
+                                |  in a few clicks. Mobirise is one of the easiest website development tools available today.
+                                a.right(href="#") More...
+                .media-container-row.margin
+                    .col-4.mbr-figure(style='width: 50%;')
+                        img(src='images/01.jpg', alt='')
+                    .col-8.media-content
+                        .mbr-section-text
+                            p.mbr-text.mb-0.mbr-fonts-style.display-7
+                                strong Make your own website in a few clicks!
+                                |  Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and
+                                em mobile friendly websites
+                                |  in a few clicks. Mobirise is one of the easiest website development tools available today.
+                                a.right(href="#") More...
+
+            a(href="#")
+                h4.align-center Més Blogs...
+        section.engine
+
+        // ABOUT US?
+        section#accordion2-7.accordion2.cid-qTJBSFTpzN.margin
             .container
                 .media-container-row.pt-5
                     .accordion-content
