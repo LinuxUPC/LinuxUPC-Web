@@ -1,27 +1,13 @@
+include libs
 include layout
 
-head
-    link(rel='stylesheet', href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
-    link(rel='stylesheet', href='assets/social-feed-plugin/jquery.socialfeed.css')
-    link(rel='stylesheet', href='assets/social-feed-plugin/style.css')
-
 .container
-    .row(style="margin-top: 10px; margin-bottom: 10px;")
+    .row(style="margin-top: 30px; margin-bottom: 10px;")
         .col-9
-            h1 Welcome!
             include home
         .col-3
-            h1 Cosas!
-            section#feed-g.mbr-social-feed.loading(data-facebook='', data-twitter='linuxUPC', data-google='', data-posts='5', data-youtube='', data-rv-view='90', style='background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 0px;')
-                img.social-feed-container-loading(alt='', src='images/loading.svg')
-                .social-feed-container
-            section.engine
+            h1 Probando Cosas
+            include sideColumn
+
 
 include footer
-
-script(src='assets/social-feed-plugin/codebird.min.js')
-script(src='assets/social-feed-plugin/moment.js')
-script(src='assets/social-feed-plugin/en-gb.js')
-script(src='assets/social-feed-plugin/doT.js')
-script(src='assets/social-feed-plugin/jquery.socialfeed.js')
-script(src='assets/social-feed-plugin/main.js')

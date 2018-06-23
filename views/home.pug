@@ -1,203 +1,127 @@
 
-doctype html
-html
-    head
-        // Site made with Mobirise Website Builder v4.7.6, https://mobirise.com
-            // test
-        meta(charset='UTF-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        meta(name='generator', content='Mobirise v4.7.6, mobirise.com')
-        meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1')
-        link(rel='shortcut icon', href='images/logo4.png', type='image/x-icon')
-        meta(name='description', content='')
-        title Home
-        link(rel='stylesheet', href='libs/web/assets/mobirise-icons/mobirise-icons.css')
-        link(rel='stylesheet', href='libs/tether/tether.min.css')
-        link(rel='stylesheet', href='libs/bootstrap/css/bootstrap.min.css')
-        link(rel='stylesheet', href='libs/bootstrap/css/bootstrap-grid.min.css')
-        link(rel='stylesheet', href='libs/bootstrap/css/bootstrap-reboot.min.css')
-        link(rel='stylesheet', href='libs/socicon/css/styles.css')
-        link(rel='stylesheet', href='libs/theme/css/style.css')
-        link(rel='stylesheet', href='libs/gallery/style.css')
-        link(rel='stylesheet', href='libs/mobirise/css/mbr-additional.css', type='text/css')
+style.
+    .margin {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    * {
+        box-sizing: border-box;
+    }
 
-        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+        font-size: 17px;
+    }
 
-        style.
-            .margin {
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-            * {
-                box-sizing: border-box;
-            }
+    .carousel-item {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-            body {
-                margin: 0;
-                font-family: Arial;
-                font-size: 17px;
-            }
+    .carousel-item img {
+        vertical-align: middle;
+    }
 
-            .item {
-                position: relative;
-                max-width: 800px;
-                margin: 0 auto;
-            }
+    .carousel-item .content {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
 
-            .item img {
-                vertical-align: middle;
-            }
+// PROJECTS
+section#gallery1-16.mbr-slider-carousel.cid-qVNdZ4j9cx(style="background-color: #C0D6E4;")
+    .container
+        h1 Title
+        #myCarousel.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+            .carousel-inner
+                .carousel-item.active
+                    img.w-100(src='images/01.jpg', alt='First slide')
+                    .content
+                        h1 Title
+                        p Description
+                .carousel-item
+                    img.w-100(src='images/02.jpg', alt='Second slide')
+                    .content
+                        h1 Title
+                        p Description
+                .carousel-item
+                    img.w-100(src='images/03.jpg', alt='Third slide')
+                    .content
+                        h1 Title
+                        p Description
+            a.carousel-control-prev(href='#myCarousel', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+            a.carousel-control-next(href='#myCarousel', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
 
-            .item .content {
-                position: absolute;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-                color: #f1f1f1;
-                width: 100%;
-                padding: 20px;
-            }
+        a(href="#")
+            h4.align-center Més Projectes...
+section.engine
+//BLOGS
+section#content6-11.mbr-section.content6.cid-qVNcrLXxv0.margin(style="background-color: #C0D6E4;")
+    .container
+        h1.margin Title
+        .media-container-row.margin
+            .col-4.mbr-figure(style='width: 50%;')
+                img(src='images/01.jpg', alt='')
+            .col-8.media-content
+                .mbr-section-text
+                    p.mbr-text.mb-0.mbr-fonts-style.display-7
+                        strong Make your own website in a few clicks!
+                        |  Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and
+                        em mobile friendly websites
+                        |  in a few clicks. Mobirise is one of the easiest website development tools available today.
+                        a.right(href="#") More...
+        .media-container-row.margin
+            .col-4.mbr-figure(style='width: 50%;')
+                img(src='images/01.jpg', alt='')
+            .col-8.media-content
+                .mbr-section-text
+                    p.mbr-text.mb-0.mbr-fonts-style.display-7
+                        strong Make your own website in a few clicks!
+                        |  Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and
+                        em mobile friendly websites
+                        |  in a few clicks. Mobirise is one of the easiest website development tools available today.
+                        a.right(href="#") More...
 
-
-    body
-        // PROJECTS
-        section#gallery1-d.mbr-gallery.mbr-slider-carousel
-            .container
-                div.margin
-                    // Gallery
-                    h1 Lastest Projects
-                        #myCarousel.carousel.slide.margin
-                            // Indicators
-                            ol.carousel-indicators(style="width: 100%; margin: 0 auto;")
-                                li.active(data-target='#myCarousel', data-slide-to='0')
-                                li(data-target='#myCarousel', data-slide-to='1')
-                                li(data-target='#myCarousel', data-slide-to='2')
-                            // Wrapper for slides
-                            .carousel-inner
-                                .item.active
-                                    img(src='images/01.jpg', alt='', style='width:100%;')
-                                    .content
-                                        h1 Title
-                                        p Descripcion
-                                .item
-                                    img(src='images/02.jpg', alt='', style='width:100%;')
-                                    .content
-                                        h1 Title
-                                        p Descripcion
-                                .item
-                                    img(src='images/03.jpg', alt='', style='width:100%;')
-                                    .content
-                                        h1 Title
-                                        p Descripcion
-                            // Left and right controls
-                            a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                                span.glyphicon.glyphicon-chevron-left
-                                span.sr-only Previous
-                            a.right.carousel-control(href='#myCarousel', data-slide='next')
-                                span.glyphicon.glyphicon-chevron-right
-                                span.sr-only Next
-            a(href="#")
-                h4.align-center Més Projectes...
-
-        section.engine
-
-        // BLOGS
-        section#content6-l.mbr-section.content6.cid-qVglxaC595.margin
-            .container
-                h1.margin Lastest Blogs
-                .media-container-row.margin
-                    .col-4.mbr-figure(style='width: 50%;')
-                        img(src='images/01.jpg', alt='')
-                    .col-8.media-content
-                        .mbr-section-text
-                            p.mbr-text.mb-0.mbr-fonts-style.display-7
-                                strong Make your own website in a few clicks!
-                                |  Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and
-                                em mobile friendly websites
-                                |  in a few clicks. Mobirise is one of the easiest website development tools available today.
-                                a.right(href="#") More...
-                .media-container-row.margin
-                    .col-4.mbr-figure(style='width: 50%;')
-                        img(src='images/01.jpg', alt='')
-                    .col-8.media-content
-                        .mbr-section-text
-                            p.mbr-text.mb-0.mbr-fonts-style.display-7
-                                strong Make your own website in a few clicks!
-                                |  Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and
-                                em mobile friendly websites
-                                |  in a few clicks. Mobirise is one of the easiest website development tools available today.
-                                a.right(href="#") More...
-
-            a(href="#")
-                h4.align-center Més Blogs...
-        section.engine
-
-        // ABOUT US?
-        section#accordion2-7.accordion2.cid-qTJBSFTpzN.margin
-            .container
-                .media-container-row.pt-5
-                    .accordion-content
-                        h2.mbr-section-title.align-center.pb-3.mbr-fonts-style.display-2
-                            | LinuxUPC
-                        #bootstrap-accordion_1.panel-group.accordionStyles.accordion.pt-5.mt-3(role='tablist', aria-multiselectable='true')
-                            .card
-                                #headingOne.card-header(role='tab')
-                                    a.collapsed.panel-title.text-black(role='button', data-toggle='collapse', data-core='', href='#collapse1_1', aria-expanded='false', aria-controls='collapse1')
-                                        h4.mbr-fonts-style.display-5
-                                            span.sign.mbr-iconfont.mbri-arrow-down.inactive
-                                            |  What is LinuxUPC?
-                                #collapse1_1.panel-collapse.noScroll.collapse(role='tabpanel', aria-labelledby='headingOne', data-parent='#bootstrap-accordion_1')
-                                    .panel-body.p-4
-                                        p.mbr-fonts-style.panel-text.display-7
-                                            | Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.
-                            .card
-                                #headingTwo.card-header(role='tab')
-                                    a.collapsed.panel-title.text-black(role='button', data-toggle='collapse', data-core='', href='#collapse2_1', aria-expanded='false', aria-controls='collapse2')
-                                        h4.mbr-fonts-style.mbr-fonts-style.display-5
-                                            span.sign.mbr-iconfont.mbri-arrow-down.inactive
-                                            |  Is it good for me?
-                                #collapse2_1.panel-collapse.noScroll.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#bootstrap-accordion_1')
-                                    .panel-body.p-4
-                                        p.mbr-fonts-style.panel-text.display-7
-                                            | Mobirise is perfect for non-techies who are not familiar with the intricacies of web development and for designers who prefer to work as visually as possible, without fighting with code. Also great for pro-coders for fast prototyping and small customers' projects.
-                            .card
-                                #headingThree.card-header(role='tab')
-                                    a.collapsed.panel-title.text-black(role='button', data-toggle='collapse', data-core='', href='#collapse3_1', aria-expanded='false', aria-controls='collapse3')
-                                        h4.mbr-fonts-style.display-5
-                                            span.sign.mbr-iconfont.mbri-arrow-down.inactive
-                                            |  Why Mobirise?
-                                #collapse3_1.panel-collapse.noScroll.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#bootstrap-accordion_1')
-                                    .panel-body.p-4
-                                        p.mbr-fonts-style.panel-text.display-7
-                                            | Key differences from traditional builders:
-                                            br
-                                            | * Minimalistic, extremely
-                                            strong easy-to-use
-                                            |  interface
-                                            br
-                                            | *
-                                            strong Mobile
-                                            | -friendliness, latest website blocks and techniques "out-the-box"
-                                            br
-                                            | *
-                                            strong Free
-                                            |  for commercial and non-profit use
-                    .mbr-figure(style='width: 100%;')
-                        img(src='images/01.jpg', alt='Mobirise', title='')
-
-
-        script(src='libs/web/assets/jquery/jquery.min.js')
-        script(src='libs/popper/popper.min.js')
-        script(src='libs/tether/tether.min.js')
-        script(src='libs/bootstrap/js/bootstrap.min.js')
-        script(src='libs/smoothscroll/smooth-scroll.js')
-        script(src='libs/masonry/masonry.pkgd.min.js')
-        script(src='libs/imagesloaded/imagesloaded.pkgd.min.js')
-        script(src='libs/mbr-switch-arrow/mbr-switch-arrow.js')
-        script(src='libs/vimeoplayer/jquery.mb.vimeo_player.js')
-        script(src='libs/bootstrapcarouselswipe/bootstrap-carousel-swipe.js')
-        script(src='libs/theme/js/script.js')
-        script(src='libs/slidervideo/script.js')
-        script(src='libs/gallery/player.min.js')
-        script(src='libs/gallery/script.js')
+// ABOUT US
+section#features11-x.features11.cid-qVJNzLOlYp(style="background-color: #C0D6E4;")
+    .container
+        .col-md-12
+            .media-container-row
+                .mbr-figure(style='width: 50%;')
+                    img(src='images/01.jpg', alt='Mobirise')
+                .align-left.aside-content
+                    h2.mbr-title.pt-2.mbr-fonts-style.display-2
+                        | Image with content
+                    .mbr-section-text
+                        p.mbr-text.mb-5.pt-3.mbr-light.mbr-fonts-style.display-5
+                            |  Alguna descripción de la aso
+                    //.block-content
+                        .card.p-3.pr-3
+                            .media
+                                .media-body
+                                    h4.card-title.mbr-fonts-style.display-7
+                                        | Over 400 Amazing Blocks
+                            .card-box
+                                p.block-text.mbr-fonts-style.display-7
+                                    | Mobirise offers several themes that include sliders, galleries, article blocks, counters, accordions, video, animated text, live filtered tables, shop, contact forms, lightbox, testimonials, timelines, google map, progress bars and more.
+                        .card.p-3.pr-3
+                            .media
+                                .media-body
+                                    h4.card-title.mbr-fonts-style.display-7
+                                        | Easy and Simple to Use
+                            .card-box
+                                p.block-text.mbr-fonts-style.display-7
+                                    | Cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required.
