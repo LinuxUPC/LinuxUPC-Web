@@ -3,6 +3,7 @@
   max-width: 600px;
   margin: 0 auto;
   position: relative;
+  height: 300px;
 }
 
 .is-builder  .mbr-social-feed{
@@ -19,7 +20,7 @@
 
 .social-feed-container-loading {
   margin: 0 auto;
-  display: none;
+  display: block;
 }
 
 .is-builder .loading .social-feed-container-loading {
